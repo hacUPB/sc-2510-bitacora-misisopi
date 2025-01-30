@@ -1,5 +1,15 @@
 # Solución 
 
+Implementa en lenguaje ensamblador el siguiente programa:
+
+```c++
+int[] arr = new int[10];
+int sum = 0;
+for (int j = 0; j < 10; j++) {
+    sum = sum + arr[j];
+}
+```
+
 ### Implementar en lenguaje ensamblador
 
 ```asm

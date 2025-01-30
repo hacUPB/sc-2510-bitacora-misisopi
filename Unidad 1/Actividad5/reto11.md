@@ -1,5 +1,41 @@
 # Solución
 
+Considera el siguiente programa:
+
+```asm
+i = 1000
+LOOP:
+if (i == 0) goto CONT
+i = i - 1
+goto LOOP
+CONT:
+````
+
+
+La traducción a lenguaje ensamblador del programa anterior es:
+
+```asm
+// i = 1000
+@1000
+D=A
+@i
+M=D
+(LOOP)
+// if (i == 0) goto CONT
+@i
+D=M
+@CONT
+D;JEQ
+// i = i - 1
+@i
+M=M-1
+// goto LOOP
+@LOOP
+0;JMP
+(CONT)
+
+```
+
 ### ¿Qué hace el programa?
 
 Se genera un bucle de una cuenta regresiva desde 1000 hasta 0.

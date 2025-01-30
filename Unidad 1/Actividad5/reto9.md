@@ -1,5 +1,12 @@
 # Solución
 
+```asm
+i = 1
+sum = 0
+sum = sum + i
+i = i + 1
+```
+
 ### ¿Qué hace el programa?
 
 - Inicializa i en 1.
@@ -18,6 +25,7 @@ Como i y sum son variables no predefinidas recibirán las primeras direcciones d
 - sum en RAM[17]
 
 ### Optimizado en dos instrucciones
+
 ```asm
 @i
 M=M+1
