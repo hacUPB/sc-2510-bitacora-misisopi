@@ -37,6 +37,7 @@ Analiza el siguiente programa en lenguaje de máquina:
 1110101010000111
 ```
 ## ¿Qué hace este programa?  
+```asm
 @16384   
 D=A      // Asigna el valor 16384 al registro D.
 
@@ -85,3 +86,4 @@ M=-1     // Escribe -1 en la dirección de memoria determinada por RAM[16]. Esto
 
 @4  
 0;JMP    // Salta incondicionalmente a la línea 4, lo que podría ser para reiniciar el proceso o manejar una condición de error.
+```
