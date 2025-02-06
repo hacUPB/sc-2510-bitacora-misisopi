@@ -9,8 +9,10 @@ Un computador digital moderno es un dispositivo electrónico diseñado para proc
  **Unidad Central de Procesamiento (CPU):** Es el "cerebro" del computador y realiza las operaciones principales, ejecuta las instrucciones del software y coordina las actividades de los demás componentes. Se divide en:
 
 **Unidad de Control (CU):** Interpreta las instrucciones del programa y las dirige a los componentes apropiados.
-Unidad Aritmética y Lógica (ALU): Realiza cálculos matemáticos y operaciones lógicas.
-Registros: Almacenan temporalmente datos e instrucciones para facilitar el procesamiento.
+
+**Unidad Aritmética y Lógica (ALU):** Realiza cálculos matemáticos y operaciones lógicas.
+
+**Registros:** Almacenan temporalmente datos e instrucciones para facilitar el procesamiento.
 Memoria
 
 **Memoria RAM (Random Access Memory):** Almacena datos e instrucciones de forma temporal mientras el computador está en funcionamiento.  
@@ -20,6 +22,7 @@ Memoria
 ### Dispositivos de Almacenamiento
 
 **Disco Duro (HDD) o Unidad de Estado Sólido (SSD):** Almacenan datos de forma permanente o semipermanente.
+
 **Memorias externas:** Como unidades USB o discos ópticos.
 
 ### Dispositivos de Entrada
