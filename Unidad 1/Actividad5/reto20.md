@@ -1,7 +1,27 @@
 # Solución
 
 ```asm
+(INICIO)
 @SCREEN
+
+@16384   
+D=A
+
+@16     
+M=D
+
+@24576  
+D=M  
+@100
+D=A
+@24576
+D = M - D
+@Bitmap
+D;JEQ 
+@INICIO
+0;JMP
+
+(Bitmap)
   D=A
   @R12
   AD=D+M
@@ -202,3 +222,4 @@
   @R13
   A=M
   D;JMP
+```

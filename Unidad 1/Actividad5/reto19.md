@@ -38,6 +38,7 @@ Analiza el siguiente programa en lenguaje de máquina:
 ```
 ## ¿Qué hace este programa?  
 ```asm
+
 @16384   
 D=A      // Asigna el valor 16384 al registro D.
 
