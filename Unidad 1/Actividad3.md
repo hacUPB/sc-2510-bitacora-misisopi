@@ -26,5 +26,3 @@ PC, D y A son componentes fundamentales en el modelo simplificado del Little Man
 - **D (DATA REGISTRER):** Es la pieza central para manejar los datos durante el procesamiento. Las operaciones matemáticas y lógicas ocurren aquí antes de almacenar el resultado o enviarlo como salida.
 
 - **A (ADRESS REGISTRER):** Permite a la CPU interpretar las instrucciones antes de ejecutarlas. Esto es crucial para seguir el ciclo de instrucción: buscar, decodificar y ejecutar.
-
-Este diseño refleja los principios básicos del ciclo de instrucción en una CPU real, ayudando a entender cómo se procesan los programas a nivel más bajo.
