@@ -53,3 +53,4 @@ Dirección de a: 0x61ff08   (Ejemplo, la dirección real depende de la ejecució
 Dirección almacenada en p: 0x61ff08
 Valor al que apunta p: 10
 ```
+En este caso b = *p; hace que el valor de b cambie de 5 a 10 porque p apunta a la la variable a y con *p a la derecha del igual estás leyendo el contenido de la variable apuntada.
