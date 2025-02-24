@@ -1,4 +1,7 @@
-### Reto 5: Implementar la función suma(a, b)
+### Solución
+
+Traduce este programa a lenguaje ensamblador:
+
  ```asm
 
 @6
