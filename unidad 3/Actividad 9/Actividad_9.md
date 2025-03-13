@@ -4,7 +4,7 @@
 
 Cuando se presiona la tecla **"f"**, el programa elimina el último objeto almacenado en el **heap** dentro del vector `heapObjects`.
 
-## Análisis detallado del código
+## Análisis del código
 
 ```cpp
 if(!heapObjects.empty()) {
@@ -15,7 +15,7 @@ if(!heapObjects.empty()) {
 
 Este fragmento de código verifica si el vector `heapObjects` **no está vacío** antes de intentar eliminar un elemento.
 
-### Explicación de cada línea
+### Explicación de líneas
 
 1. **`delete heapObjects.back();`**
    - `heapObjects.back()` obtiene un **puntero** al último objeto almacenado en el vector.
@@ -44,7 +44,7 @@ delete heapObjects.back();
 - Se liberaría la memoria del último objeto en el heap, pero el puntero seguiría almacenado en el vector.
 - Intentar acceder a ese puntero después de eliminarlo podría causar errores de acceso a memoria inválida.
 
-# Conclusiones
+## Conclusiones
 
 - Cuando se presiona la tecla **"f"**, el programa elimina correctamente el último objeto en el **heap**.
 - Primero se **libera la memoria** con `delete` y luego se **elimina el puntero** del vector con `pop_back()`.

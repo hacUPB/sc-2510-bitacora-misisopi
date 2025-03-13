@@ -1,10 +1,9 @@
 # Solución
 
-# Manejo de Memoria en C++
-
 ## ¿Cuándo Crear Objetos en el Heap y Cuándo en Memoria Global?
 
 ### Heap (Memoria Dinámica)
+
 **Usa el heap cuando:**
 - Necesitas que los objetos **persistan más allá del alcance de la función** que los creó.
 - Se deben **crear y eliminar dinámicamente** en tiempo de ejecución.
@@ -31,6 +30,7 @@ void ofApp::exit() {
 ---
 
 ### Memoria Global
+
 **Usa la memoria global cuando:**
 - El objeto **debe existir durante toda la ejecución del programa**.
 - Se necesita acceder desde **múltiples funciones** sin pasarlo como parámetro.
