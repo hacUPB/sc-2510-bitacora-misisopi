@@ -13,41 +13,35 @@ for (int j = 0; j < 10; j++) {
 ### Implementar en lenguaje ensamblador
 
 ```asm
-@sum
-M=0
+@arr  // Dirección base
+D=A
 
-@j
+@sum  // Inicializar sum
 M=0
-
-@arr
-D=A           // D = dirección base del arreglo
-@base
-M=D
+@j  // j=0
+M=0
 
 (LOOP)
 @j
-D=M          // D = j
+D=M
 @10
-D=D-A        // D = j - 10
+D=D-A
 @END
-D;JGE        // Si j >= 10, salir del bucle
+D;JGE
 
-// Obtener arr[j]
-@j
-D=M          // D = j
-@base
-A=M+D        // A = base + j (accede a arr[j])
-D=M          // D = arr[j]
-
+@arr
+A=D+M
+D=M
 @sum
-M=M+D        // sum += arr[j]
+M=D+M
 
-// j = j + 1
 @j
 M=M+1
 
 @LOOP
 0;JMP
+
+(END)
 
 ```
 ### ¿Qué hace este programa?

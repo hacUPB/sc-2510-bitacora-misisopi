@@ -2,30 +2,30 @@
 
 ```asm
 (INICIO)
-@SCREEN
+@SCREEN  // Dirección base de la pantalla
 
-@16384   
+@16384   // Dirección inicial de SCREEN
 D=A
 
-@16     
+@16      // Guardar la dirección de inicio en R16
 M=D
 
-@24576  
-D=M  
-@100
+@24576   // Dirección del teclado (KBD)
+D=M      // Leer la tecla presionada
+@100     // Código ASCII de 'd'
 D=A
-@24576
-D = M - D
-@Bitmap
+@24576   // Leer nuevamente el valor del teclado
+D = M - D // Comparar con 'd'
+@Bitmap  // Si es 'd', saltar a dibujar el bitmap
 D;JEQ 
-@INICIO
+@INICIO  // Si no es 'd', reiniciar el loop
 0;JMP
 
 (Bitmap)
   D=A
   @R12
   AD=D+M
-  M=-1
+  M=-1  // Dibujar pixel encendido
   AD=A+1
   @7
   D=D+A

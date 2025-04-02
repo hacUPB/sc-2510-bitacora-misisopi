@@ -39,13 +39,13 @@ Analiza el siguiente programa en lenguaje de máquina:
 ## ¿Qué hace este programa?  
 ```asm
 
-@16384   
+@16384   // Dirección de pantalla
 D=A      // Asigna el valor 16384 al registro D.
 
 @16     
 M=D      // Guarda el valor de D (16384) en la dirección de memoria RAM[16].  
 
-@24576  
+@24576   // KBD = Dirección de teclado
 D=M      // Carga en D el valor almacenado en la dirección RAM[24576] (que es la dirección del teclado en Hack).  
 
 @19  
