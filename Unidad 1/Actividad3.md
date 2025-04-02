@@ -16,13 +16,13 @@ PC, D y A son componentes fundamentales en el modelo simplificado del Little Man
 
 #### A (ADRESS REGISTRER):
 
-- Es el registro donde se almacena temporalmente la instrucción que se está procesando.
-- La CPU toma la instrucción desde la dirección indicada por el PC, la carga en este registro y luego la decodifica para determinar qué acción realizar.
+- Registro de direcciones => @valor para almacenar un número o dirección
+- El registro A es un registro especial que puede almacenar una dirección de memoria o un valor numérico.
 
 ### ¿Para qué los usa la CPU?
 
 - **PC:** La CPU utiliza el PC para saber en qué parte del programa se encuentra y para garantizar que las instrucciones se ejecuten en el orden correcto. En caso de una instrucción de salto (BRP, BRZ, BRA), el valor del PC se actualiza a una dirección específica.
 
-- **D (DATA REGISTRER):** Es la pieza central para manejar los datos durante el procesamiento. Las operaciones matemáticas y lógicas ocurren aquí antes de almacenar el resultado o enviarlo como salida.
+- **D (DATA REGISTRER):** Es la pieza central para manejar los datos durante el procesamiento. Las operaciones matemáticas y lógicas ocurren aquí antes de almacenar el resultado o enviarlo como salida. El registro D es un registro de propósito general. Solo almacena datos (no direcciones).
 
-- **A (ADRESS REGISTRER):** Permite a la CPU interpretar las instrucciones antes de ejecutarlas. Esto es crucial para seguir el ciclo de instrucción: buscar, decodificar y ejecutar.
+- **A (ADRESS REGISTRER):** Permite a la CPU interpretar las instrucciones antes de ejecutarlas. Esto es crucial para seguir el ciclo de instrucción: buscar, decodificar y ejecutar. El registro A es un registro especial que puede almacenar una dirección de memoria o un valor numérico. 
